@@ -23,14 +23,14 @@ Shape::~Shape(){
 
 
 Shape::Shape(const Shape & figure){
-	/*
+
 	for(unsigned int tmp = 0; tmp < node_cord.size(); tmp++){
 		node_cord[tmp] = figure.node_cord[tmp];
 	}
 	for(unsigned int tmp = 0; tmp < side_length.size(); tmp++){
 		side_length[tmp] = figure.side_length[tmp];
 	}
-	*/
+
 	angle = figure.angle;
 	std::cout << "Konstruktor kopiujacy Shape wywolany!" << std::endl;
 }
