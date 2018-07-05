@@ -19,6 +19,7 @@ public:
 	virtual ~Node();
 	Node(const Node & nod);
 	Node & operator = (const Node & nod);
+	Node & operator += (const Node & vctr);
 };
 
 #endif /* NODE_H_ */

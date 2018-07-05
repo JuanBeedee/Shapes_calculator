@@ -14,18 +14,23 @@
 #include "Node.h"
 
 class Shape {
+protected:
+	int number_of_nodes;
 	std::vector <Node> node_cord;
 	std::vector <float> side_length;
-	float angle;
+	float area;
+	float perimeter;
 
 public:
 	Shape();
 	virtual ~Shape();
 	Shape(const Shape & figure);
-	virtual void calculate_nodes(){};
-	virtual void calculate_sides(){};
-	virtual void calculate_area(){};
-	virtual void calculate_perimeter(){};
+
+	virtual void set_shape() = 0;
+	virtual void calculate_nodes() = 0;
+	virtual void calculate_sides() = 0;
+	virtual void calculate_area() = 0;
+	virtual void calculate_perimeter() = 0;
 };
 
 #endif /* SHAPE_H_ */

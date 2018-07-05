@@ -29,3 +29,9 @@ Node & Node::operator = (const Node & nod){
 	y = nod.y;
 	return *this;
 }
+
+Node & Node::operator += (const Node & vctr){
+	x += vctr.x;
+	y += vctr.y;
+	return *this;
+}
