@@ -5,5 +5,5 @@
  *      Author: szymon
  */
 
-#include "Shape.h"
+#include "Node.h"
 
